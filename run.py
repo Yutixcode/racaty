@@ -1,3 +1,5 @@
+# by Lord Yutix
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -9,4 +11,5 @@ def getlink(url):
 	new = BeautifulSoup(raw,'html.parser').find('a',{'id':'uniqueExpirylink'})['href']
 	return new
 
-print(getlink('https://racaty.net/5teckmixflsp'))
+yoo = getlink('https://racaty.net/5teckmixflsp')
+print(yoo)
